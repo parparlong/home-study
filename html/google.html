@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2152cfa5a3.js" crossorigin="anonymous"></script>
+    <style>
+        #c3 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #login {
+            color: black;
+            background-color: rgb(60, 60, 223);
+            border: 0px;
+            border-radius: 50px;
+
+        }
+
+        #c1 {
+            display: flex;
+            text-decoration: none;
+            gap: 10px;
+
+        }
+
+        #c2 {
+            display: flex;
+            /* justify-content: end; */
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        #googleemg {
+            display: flex;
+            /*자식들을or 자기자신을 컨트롤한다 img선언하면 src가 자식이된다*/
+            justify-content: center;
+            /*수평정렬 왼쪽/중간/오른쪽*/
+            margin: auto;
+            margin-top: 150px;
+
+        }
+
+        #chat {
+            /* background-color: red; */
+            border: 1px solid rgb(221, 216, 216);
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 30px;
+            width: 400px;
+            height: 40px;
+            align-items: center;
+            box-shadow: 0px 2px 8px rgb(221, 216, 216);
+            
+        }
+
+        #two {
+            display: flex;
+            justify-content: center;
+        }
+        #text{
+            
+            width: 50%;
+            height: 50%;
+        }
+        #down{
+            display: flex;
+            justify-content: center;
+            margin:0 auto;
+            margin-top: 30px;
+            gap: 30px;
+            
+        }
+        .zz{
+            background-color: rgb(250, 246, 246);
+            border: 0px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="c3">
+        <div id="c1">
+            <a href="https://about.google/?fg=1&utm_source=google-KR&utm_medium=referral&utm_campaign=hp-header">Google
+                정보</a>
+            <a
+                href="https://store.google.com/kr/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ko&pli=1">스토어</a>
+        </div>
+        <div id="c2">
+            <a href="https://mail.google.com/mail">Gmail</a>
+            <a href="https://www.google.com/imghp?hl=ko&ogbl">이미지</a>
+            <a href="https://accounts.google.com/InteractiveLogin"> <input id="login" type="button" value="로그인"> </a>
+        </div>
+    </nav>
+    <img id="googleemg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnxefHYLnvWuIF1nChEInB3ekM6BbxYGzHA&s">
+
+
+    <div id="chat">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="text" type="text">
+        <i class="fa-solid fa-keyboard"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-image"></i>
+    </div>
+
+    <div id="down">
+        <input class="zz" type="button" value="Google검색" src="https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwiqjp2B166KAxWYr1YBHd5hPScQPAgI&pli=1">
+        <input class="zz" type="button" value="I'm Feeling Lucky" src="https://doodles.google/">
+    </div>
+</body>
+
+</html>
