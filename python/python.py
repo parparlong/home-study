@@ -91,6 +91,7 @@ print(type(c))
 b = b + b
 print(b) 
 
+
 # 딕셔너리 키벨류 형태 중괄호 사용
 dic = {'name': 'kim', 'age':30, 'phone':'010-2215-6095'}
 print(type(dic))
@@ -106,3 +107,48 @@ print(dic)
 
 # 조회
 print(dic['name'])
+
+# 키만보아서 배열로 출력 
+print(dic.keys())
+
+# keys만 포문을 통해 출력 
+dic = {'name': 'kim', 'age':30, 'phone':'010-2215-6095'}
+for k in dic.keys():
+    print(k)
+#벨류만 뽑는방법
+for k in dic.values():
+    print(k) 
+print(dic)
+# 리스트가 생기고 각각에 항목마다 튜플에 넣어서 출력해준다
+print(dic.items())
+
+# 키와 벨류 모두 지우기
+dic.clear()
+print(dic)
+
+# 키값에 맞는 벨류값 출력 
+dic = {'name': 'kim', 'age':30, 'phone':'010-2215-6095'}
+# 대괄호 사용시 키에 맞는값이 없으면 값이 없다고 에러가뜬다
+print(dic['name'])
+# get으로 가져오게 되면 값이 없다고 none만 출력 
+# 두번째 전달인자값은 값이 없을때 출력되는 값을 넣을수있음
+print(dic.get('ㅋㅋㅋㅋ',"값이없습니다"))
+
+# 해당 딕셔너리 변수에 name이라는 키가 있는지 확인
+print('name' in dic)
+
+# 집합으로 묶은뒤 출력 set 타입
+s1 = set([1,5,3,2])
+print(s1) 
+print(type(s1)) 
+# 문자열을 집합에 넣으면 중복된글자 제거, 순서 뒤죽박죽인 
+# 각문자마다 문자열 리스트로 출력 
+s2 = set('Hellow')
+print(s2)
+# 집합자료형은 순서가 뒤죽박죽이기때문에 인덱싱등 사용불가 
+# 그래서 list로 형변환하여 사용  
+print('-'*50)
+# print(s1[1]) 오류남
+print(list(s1)[3])
+print('-'*50)
+
