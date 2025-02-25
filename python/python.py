@@ -152,3 +152,83 @@ print('-'*50)
 print(list(s1)[3])
 print('-'*50)
 
+# 2025-02-25
+# 집합 자료형에서 교집합 값 구하기 
+s1 = set([1,2,3,4,5,6])
+s2 = set([4,5,6,7,8,9])
+print(s1&s2)
+# 교집합 구하는 메소드
+print(s1.intersection(s2))
+
+# 집합 자료형에서 합집합 값 구하기 
+# 모든값 + 중복값 삭제
+print(s1|s2)
+# 합집합 구하는 메소드
+print(s1.union(s2))
+
+# 집합 자료형에서 차집합 값 구하기 
+# s1에서 중복값 제거후 남은것만
+print(s1-s2)
+print(s2-s1)
+# 차집합 구하는 메소드
+print(s2.difference(s1))
+
+ 
+# 집합에 값1개추가
+s1.add(7)
+print(s1)
+# 집합에 여러개의 값추가 
+s1.update([8,9,10])
+print(s1)
+# 값 삭제
+s1.remove(10)
+print(s1)
+
+# 리스트에서 중복값 삭제하고싶을떄
+li = [1,2,3,4,4,4,4,5,6,7,7,8,9,8,9,]
+s1 = set(li)
+print(s1)
+li = list(s1)
+print(li)
+print(type(li))
+
+# 불자료형 --------------------------------------
+a = True
+b = False
+print(type(a),type(b))
+a = 1 == 2
+print(a)
+
+a = [1,2,3,4,5,6]
+while a:
+    print(a)
+    a.pop()
+
+print("-------------------------------")  
+if [1,2,3]:
+    print("참")
+else:
+    print("거짓")
+a = bool([1,2,3])
+print(a)
+
+# 변수 (주소값) ------------------
+# 얕은복사
+b = a
+print(id(a))
+print(id(b))
+print(a is b)
+
+a = [1,2,3]
+b = [4,5,6]
+print(id(a))
+print(id(b))
+
+# 깊은복사 
+a = [1,2,3]
+b = a[:]
+print(id(a))
+print(id(b))
+
+
+ 
