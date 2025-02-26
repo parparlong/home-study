@@ -224,11 +224,23 @@ b = [4,5,6]
 print(id(a))
 print(id(b))
 
-# 깊은복사 
+# 슬라이싱을 이용한 얕은복사 (메모리)
 a = [1,2,3]
 b = a[:]
 print(id(a))
 print(id(b))
+# 얕은복사
+from copy import copy
+a = [1,2,3]
+b = copy(a)
+print(id(a[0]))
+print(id(b[1]))
+print(b)
 
+a,b = ('python', 'life')
+print(a)
+print(b)
 
- 
+a = 1
+print(id(a))
+
