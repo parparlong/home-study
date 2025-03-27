@@ -244,3 +244,93 @@ print(b)
 a = 1
 print(id(a))
 
+# ----------------
+# if 문
+money = False
+if money:
+    print("택시를 타고 가라")
+else:
+    print("걸어가라")
+# ------------
+
+# or ,and ,not 
+money = 2000
+card = True
+if money >= 3000 or card:
+    print("택시를 타고 가라")
+else:
+    print("걸어가라")
+ 
+
+#-----------
+print (1 in [1,2,3]) 
+print (1 not in [1,2,3]) 
+print ('a' in ('a','b','c'))
+print ('a' not in ('a','b','c'))
+
+#-------------
+pocket = ['paper','cellphone','money']
+if 'money' in pocket:
+    print("택시를 타고 가라")
+else:
+    print("걸어가라")
+# -----------
+print("-------------------")
+pocket = ['paper','cellphone','money']
+if 'money' in pocket:
+    pass
+else:
+    print("걸어가라")
+# -------------
+
+pocket = ['paper','cellphone']
+if 'money' in pocket:
+    print("택시를 타고가라")
+else:
+    if card:
+        print("택시를 타고가라ㅂ2")
+    else:
+        print("걸어가라")
+#-----------------
+pocket = ['paper','cellphone']
+if 'money' in pocket:
+    print("택시를 타고가라")
+elif card:
+        print("택시를 타고가라ㅂ22")
+else:
+    print("걸어가라")
+# -----------------
+pocket = ['paper','cellphone','money']
+if 'money' in pocket: pass
+else : print("카드를 꺼내라 ")
+# ---------------------
+score = 100
+message = 'success' if score >= 60 else "failure"
+print(message)
+# ---------------------
+
+a=""
+if a: print("참입니다")
+else: print("거짓입니다")
+# ----------------
+treeHit = 0
+while treeHit <10:
+    treeHit  = treeHit + 1
+    print("나무를 %d번 찍었습니다" % treeHit)
+    if treeHit ==10:
+        print("나무 넘어갑니다.")
+#-------------------------
+# 4번이 입력될떄까지 입력
+prompt = """
+1. Add
+2. Del
+3. List
+4. Quit
+Enter numver: """
+
+number =0
+while number !=4:
+    print(prompt)
+    number = int(input())  
+
+# ----------------------
