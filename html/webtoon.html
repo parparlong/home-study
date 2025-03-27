@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        border: 1px solid black;
+        width: 100vw;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    #subbar {
+        border: 1px solid black;
+        width: 20vw;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #main {
+        border: 1px solid black;
+        width: 79vw;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .genre {
+        border: 1px solid black;
+    }
+
+    .sub_main_div {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #sub_main_div_parent{
+        border: 1px solid black;
+      
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        height: 500px;
+        
+    }
+    th,td{
+        border: 1px solid black;
+       
+    }
+    #img-parent{
+        height: 300px;
+    }
+</style>
+
+<body>
+    <div>
+        <div id="header">
+            Webtoon
+        </div>
+        <div id="sub_main_div_parent">
+            <div id="subbar" class="sub_main_div">
+                <ul>
+                    <li class="genre">장르</li>
+                    <li class="genre">공포</li>
+                    <li class="genre">코믹</li>
+                    <li class="genre">느와르</li>
+                </ul>
+            </div>
+            <div id="main" class="sub_main_div">
+                <table>
+                    <tr id="img-parent">
+                        <th><img src="" alt="이미지" class="img_size"></th>
+                        <th><img src="" alt="이미지" class="img_size"></th>
+                        <th><img src="" alt="이미지" class="img_size"></th>
+                    </tr>
+                    <tr>
+                        <td>웹툰 제목</td>
+                        <td>웹툰 제목</td>
+                        <td>웹툰 제목</td>
+                    </tr>
+                    <tr>
+                        <td>웹툰 작가</td>
+                        <td>웹툰 작가</td>
+                        <td>웹툰 작가</td>
+                    </tr>
+                    <tr>
+                        <td>웹툰 설명</td>
+                        <td>웹툰 설명</td>
+                        <td>웹툰 설명</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
